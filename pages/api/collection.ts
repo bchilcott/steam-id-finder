@@ -2,7 +2,7 @@ import axios from "axios";
 import type { NextApiRequest, NextApiResponse } from "next";
 import FormData from "form-data";
 
-const API_KEY = "D04137DACB1441C2C9FE9EC0D702556D";
+const API_KEY = process.env.STEAM_KEY;
 const COLLECTION_URL = `https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/`;
 const CHILDREN_URL = `https://api.steampowered.com/ISteamRemoteStorage/GetCollectionDetails/v1/`;
 
